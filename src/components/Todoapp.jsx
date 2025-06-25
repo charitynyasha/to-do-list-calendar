@@ -116,7 +116,7 @@ const Todoapp = () => {
 
   if (currentScreen === "main") {
     return (
-      <div className="bg-black  max-w-md mx-auto p-4 rounded-md">
+      <div className="bg-black  max-w-md mx-auto min-h-screen p-4 rounded-md">
         <div className="bg-black">
           <div className="flex justify-between items-center mb-4">
             <div className="h-8 w-10 bg-pink-200 text-black flex items-center justify-center rounded-xl">
