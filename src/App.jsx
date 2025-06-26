@@ -1,5 +1,5 @@
 
-import Todoapp from './components/toDoApp';
+import toDoApp from './components/toDoApp';
 
 const App = () => {
   return (

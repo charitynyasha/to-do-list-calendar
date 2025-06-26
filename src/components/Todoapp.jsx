@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Plus, Calendar, CheckCircle2, Circle, ArrowLeft } from "lucide-react";
 
-const Todoapp = () => {
+const toDoApp = () => {
   //State to track the which screen is currently displayed
   const [currentScreen, setCurrentScreen] = useState("main");
 
@@ -162,7 +162,7 @@ const Todoapp = () => {
              ))}
           </div>
           {/*bottom navigation bar */}
-          <div className="flex mt-4 justify-between items-center px-12 mt-5">
+          <div className="flex justify-between items-center px-12 mt-5">
              <div className="grid grid-cols-2 gap-2">
              <span className="bg-gray-200 h-3 w-3 rounded-full"></span>
               <span className="bg-gray-200 h-3 w-3 rounded-full"></span>
@@ -232,4 +232,4 @@ const Todoapp = () => {
     );
   }
 };
-export default Todoapp;
+export default toDoApp;
