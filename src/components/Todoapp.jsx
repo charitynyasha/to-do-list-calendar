@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Plus, Calendar, CheckCircle2, Circle, ArrowLeft } from "lucide-react";
 
-const toDoApp = () => {
+const Todoapp = () => {
   //State to track the which screen is currently displayed
   const [currentScreen, setCurrentScreen] = useState("main");
 
@@ -232,4 +232,4 @@ const toDoApp = () => {
     );
   }
 };
-export default toDoApp;
+export default Todoapp;
