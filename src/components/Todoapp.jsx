@@ -116,7 +116,7 @@ const Todoapp = () => {
 
   if (currentScreen === "main") {
     return (
-      <div className="bg-black  max-w-md mx-auto min-h-screen p-4 rounded-md">
+      <div className="bg-black  max-w-sm mx-auto  p-6 min-h-screen rounded-sm my-10">
         <div className="bg-black">
           <div className="flex justify-between items-center mb-4">
             <div className="h-8 w-10 bg-pink-200 text-black flex items-center justify-center rounded-xl">
@@ -131,7 +131,7 @@ const Todoapp = () => {
             </div>
           </div>
           <div className="flex justify-between items-center mb-4">
-            <h1 className="text-white text-4xl ">
+            <h1 className="text-white text-3xl ">
               Daily <br /> Tasks
             </h1>
             <p className="text-white mt-10">july 10</p>
@@ -142,7 +142,7 @@ const Todoapp = () => {
           {/* Displaying tasks */}
           <div className=" space-y-4 rounded-2xl ">
                {tasks.map((task) => (
-              <div key={task.id} className={`${task.completed ? "bg-pink-200 text-black " : "bg-gray-800 text-white "} h-26 rounded-2xl p-4 flex justify-between items-center`}>
+              <div key={task.id} className={`${task.completed ? "bg-pink-200 text-black " : "bg-gray-800 text-white "} h-23 rounded-2xl p-4 flex justify-between items-center`}>
                 <div className="flex justify-between items-center w-full">
                   <div className="flex-col flex justify-between">
                       <p>{task.time}</p> 
@@ -162,15 +162,15 @@ const Todoapp = () => {
              ))}
           </div>
           {/*bottom navigation bar */}
-          <div className="flex justify-between items-center px-12 mt-5">
+          <div className="flex justify-between items-center px-12 mt-8 mb-8">
              <div className="grid grid-cols-2 gap-2">
-             <span className="bg-gray-200 h-3 w-3 rounded-full"></span>
-              <span className="bg-gray-200 h-3 w-3 rounded-full"></span>
-              <span className="bg-gray-200 h-3 w-3 rounded-full"></span>
-              <span className="bg-gray-200 h-3 w-3 rounded-full"></span>
+             <span className="bg-gray-200 h-2 w-2 rounded-full"></span>
+              <span className="bg-gray-200 h-2 w-2 rounded-full"></span>
+              <span className="bg-gray-200 h-2 w-2 rounded-full"></span>
+              <span className="bg-gray-200 h-2 w-2 rounded-full"></span>
              </div>
-             <button className=" bg-gray-950 h-10 w-10 text-white rounded-sm flex items-center justify-center" onClick={() => setCurrentScreen("create")}><Plus /></button>
-             <div className="bg-black text-white"> <Calendar className="w-8 h-8 text-white" /></div>
+             <button className=" bg-gray-950 h-8 w-8 text-white rounded-sm flex items-center justify-center" onClick={() => setCurrentScreen("create")}><Plus /></button>
+             <div className="bg-black text-white h-8 w-8"> <Calendar className="w-8 h-8 text-white" /></div>
           </div>
         </div>
       </div>
@@ -186,7 +186,7 @@ const Todoapp = () => {
           </button>
           <h1 className="text-white text-2xl">Create Task</h1>
         </div>
-        <div className="bg-gray-800 rounded-lg p-4 space-y-4">
+        <div className="bg-gray-800 rounded-lg p-4  space-y-4">
           <input
             type="text"
             placeholder="Task Title"
